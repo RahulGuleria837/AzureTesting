@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "FunctionApp22": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7225",
+      "launchBrowser": false
+    }
+  }
+}
