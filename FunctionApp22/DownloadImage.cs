@@ -40,8 +40,8 @@ namespace FunctionApp22
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "DownloadImage/{fileName}")] HttpRequest req, string fileName,
             ILogger log)
         {
-            string connection = "DefaultEndpointsProtocol=https;AccountName=storageforimagess;AccountKey=a0xKzqka3rF61JIEGXeUpFM4igkq8TtUSjhXllujgdiqMVMgdHh9gSPGxY1rIFiBWSLAMVfwV6oU+AStYqJV1w==;EndpointSuffix=core.windows.net";
-            string containerName = "containerforimages";
+            string connection = "";
+            string containerName = "";
             var container = new BlobContainerClient(connection, containerName);
             if (await container.ExistsAsync())
             {
